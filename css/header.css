@@ -1,0 +1,141 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+  * {
+      padding: 0px;
+      margin: 0;
+  }
+
+  header {
+      position: sticky;
+      top: 0;
+      transition: ease-in-out;
+  }
+
+  nav {
+      background-color: black;
+      border-bottom: 3px solid aqua;
+      font-size: 15px;
+
+  }
+
+  #nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 45px;
+
+  }
+
+  .protfo {
+      font-family: 'Ubuntu', sans-serif;
+      color: white;
+      font-size: 1.7em;
+  }
+
+  .lio {
+      /* color:  rgb(61 254 215); */
+      color: aqua;
+      font-size: 1.10em;
+  }
+
+  .nav-links {
+      text-decoration: none;
+      font-family: 'Ubuntu', sans-serif;
+      color: white;
+      font-size: 1.2em;
+      padding: 0px 10px;
+  }
+
+  .nav-links-contact {
+      text-decoration: none;
+      font-family: 'Ubuntu', sans-serif;
+      color: white;
+      font-size: 1.2em;
+      padding: 0px 10px;
+  }
+
+  .nav-links:hover {
+      color: rgb(61 254 215);
+      color: aqua;
+      /* border-bottom: 1px solid aqua; */
+      transition: 0.5s ease-in-out;
+  }
+
+  .nav-links :nth-child(5):hover {
+      color: rgb(12, 26, 23);
+      color: rgb(5, 7, 7);
+  }
+
+
+
+  #Contactus {
+      /* background-color: rgb(61 254 215); */
+      background-color: aqua;
+      border: 1px solid rgb(6, 214, 214);
+      border-radius: 4px 0px 4px 0px;
+      padding: 4px 2px;
+  }
+
+  #Contactus a:hover {
+      color: rgb(7, 35, 245);
+      /* font-size: 1.22em;x`x` */
+      transition: 0.5s ease-in-out;
+  }
+
+
+  #hemburger {
+      color: white;
+      font-size: 1.5em;
+      /* width: 2vw; */
+      padding-left: 10px;
+      /* visibility: hidden; */
+      display: none;
+      cursor: pointer;
+  }
+
+
+
+  @media screen and (max-width:860px) {
+      #hemburger {
+          display: inline;
+          padding-right: 15px;
+      }
+
+      .nav-links:nth-child(1) {
+          display: none;
+      }
+
+      .nav-links:nth-child(2) {
+          display: none;
+      }
+
+      .nav-links:nth-child(3) {
+          display: none;
+      }
+
+      .nav-links:nth-child(4) {
+          display: none;
+      }
+
+
+
+
+      #nav-container {
+          padding: 10px 15px;
+
+      }
+  }
+
+  @media screen and (max-width:420px) {
+      #Contactus {
+          display:none;
+          /* visibility: hidden; */
+      }
+      /* #nav-container{
+        display: flex;
+        /* grid-template-columns:auto auto; */
+        justify-content: space-between;
+      } */
+
+  }

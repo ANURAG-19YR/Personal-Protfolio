@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+}
+
+main {
+    background-color: aqua;
+    background: rgb(0, 0, 0);
+    padding: 1% 0%;
+    font-size: 16px;
+    /* background: radial-gradient(circle, rgba(49, 141, 209, 1) 0%, rgba(2, 0, 36, 1) 78%, rgba(0, 212, 255, 1) 100%); */
+    border-bottom: 4px solid aqua;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* border: 2px solid white; */
+    margin: 0px 30px;
+    justify-self: center;
+    padding: 0px 20px;
+}
+
+#main-container-items {
+    /* border: 2px solid white; */
+    text-align: center;
+    align-items: center;
+    /* padding-top: 15px; */
+    padding: 1% 0px;
+}
+
+/* .MNR{
+    padding-left: 80px;
+} */
+
+#main-container-items h4 {
+    font-family: 'Salsa', cursive;
+    font-size: 1.4em;
+    color: white;
+}
+
+#main-container-items h2 {
+    font-family: 'Salsa', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 3.7em;
+}
+
+#main-container-items h3 {
+    font-family: 'Salsa', cursive;
+    font-size: 1.3em;
+    color: white;
+}
+
+#Download-CV {
+    background-color: #00d7d7;
+    border: 1px solid rgb(6, 214, 214);
+    border-radius: 10px;
+    padding: 4px 5px;
+    margin: 8px 0px;
+}
+.nav-links-dowload{
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 1.2em;
+    padding: 0px 10px; 
+}
+#Download-CV a:hover{
+    transition: 0.5s ease-in-out;
+    color:rgb(7, 35, 245);
+    font-size: 1.21rem;
+}
+
+#Gupta {
+    color: aqua;
+    font-size: 1em;
+}
+
+#bg-img {
+    width: max(200px, 35vw);
+    align-items: center;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    box-shadow: 0px 0px 52px aqua;
+    padding: 10px 20px 10px 10px;
+    margin: 8% 2%;
+}
+
+
+
+/* Qualification part is here */
+#qual-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+#qual-items {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    border: 2px solid aqua;
+    border-radius: 24px;
+    margin: 10px;
+
+}
+#qual-nam{
+    font-size: 1.5em;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid aqua;
+    padding-bottom: 5px;
+}
+
+#qual-icons {
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 5px;
+}
+
+#qual-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
+    color: white;
+    color: aqua;
+}

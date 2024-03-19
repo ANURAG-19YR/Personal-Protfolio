@@ -1,0 +1,22 @@
+footer{
+    background-color: black;
+}
+
+#icons {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+#icons:hover{
+    transition:1s ease-out ;
+    color:aqua;
+    /* background-color: linear-gradient( aqua,orange ); */
+}
+
+#icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 17px 34%;
+}
