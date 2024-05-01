@@ -132,10 +132,5 @@
           display:none;
           /* visibility: hidden; */
       }
-      /* #nav-container{
-        display: flex;
-        /* grid-template-columns:auto auto; */
-        justify-content: space-between;
-      } */
-
+    
   }
