@@ -23,7 +23,8 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     /* border: 2px solid white; */
-    margin: 0px 30px;
+    margin: 0px 20px;
+    gap: 10px;
     justify-self: center;
     padding: 0px 20px;
 }
@@ -50,6 +51,7 @@ main {
     font-family: 'Salsa', cursive;
     color: rgb(255, 255, 255);
     font-size: 3.7em;
+    text-shadow: 3px 0 0 #00a99d;;
 }
 
 #main-container-items h3 {
@@ -59,12 +61,17 @@ main {
 }
 
 #Download-CV {
-    background-color: #00d7d7;
+    background-color: #06b8b8;
     border: 1px solid rgb(6, 214, 214);
     border-radius: 10px;
     padding: 4px 5px;
     margin: 8px 0px;
+    transition: all ease-out 0.3s;
 }
+#Download-CV:hover{
+    transform: scale(1.03);
+}
+
 .nav-links-dowload{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
@@ -74,20 +81,22 @@ main {
 }
 #Download-CV a:hover{
     transition: 0.5s ease-in-out;
-    color:rgb(7, 35, 245);
+    color:rgb(28, 55, 253);
     font-size: 1.21rem;
+    
 }
 
 #Gupta {
-    color: aqua;
+    color: #07dede;
     font-size: 1em;
+    text-shadow: 3px 0 0 white;
 }
 
 #bg-img {
     width: max(200px, 35vw);
     align-items: center;
     border: 3px solid aqua;
-    border-radius: 12%;
+    border-radius: 2%;
     box-shadow: 0px 0px 22px aqua;
     padding: 10px 20px 10px 10px;
     margin: 8% 2%;

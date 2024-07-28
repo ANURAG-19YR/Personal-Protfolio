@@ -12,13 +12,15 @@ footer{
     transition:1s ease-out ;
     color:aqua;
     /* background-color: linear-gradient( aqua,orange ); */
+    transform: scale(1.2);
 }
 
 #icon-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 17px 34%;
+    gap: 2%;
+    padding: 17px 0px;
 }
 
 
@@ -27,6 +29,6 @@ footer{
         /* display: flex;
         justify-content: space-evenly;
         align-items: center; */
-        padding: 18px 22%;
+        /* padding: 18px 28%; */
     }
-    }
+}

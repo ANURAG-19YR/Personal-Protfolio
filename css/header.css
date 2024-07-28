@@ -12,10 +12,31 @@
       transition: ease-in-out;
   }
 
+
+  .cursor-move {
+      width: 25px;
+      background-color: rgba(255, 255, 255, 0.807);
+      height: 20px;
+      box-shadow: 0px -1px 19px 7px aqua;
+      border-radius: 50%;
+      position: absolute;
+      /* left: 50%;
+    top: 50%; */
+      left: -5px;
+      mix-blend-mode: difference;
+      transition: all ease-out 0.1ms;
+      opacity: 0;
+
+  }
+
+
+
+
   nav {
       background-color: black;
       border-bottom: 3px solid aqua;
       font-size: 15px;
+      /* position: relative; */
 
   }
 
@@ -39,14 +60,6 @@
       font-size: 1.10em;
   }
 
-  .nav-links {
-      text-decoration: none;
-      font-family: 'Ubuntu', sans-serif;
-      color: white;
-      font-size: 1.2em;
-      padding: 0px 10px;
-  }
-
   .nav-links-contact {
       text-decoration: none;
       font-family: 'Ubuntu', sans-serif;
@@ -55,32 +68,56 @@
       padding: 0px 10px;
   }
 
-  .nav-links:hover {
-      color: rgb(61 254 215);
-      color: aqua;
-      /* border-bottom: 1px solid aqua; */
-      transition: 0.5s ease-in-out;
+
+
+  /* Base styles for navigation links */
+  .nav-links {
+      display: inline-block;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      font-family: 'Ubuntu', sans-serif;
+      color: white;
+      font-size: 1.2em;
+      padding: 0px 10px;
   }
+
+  /* Hover effect */
+  .nav-links:hover {
+      color: aqua;
+      /* Change text color on hover */
+      transform: scale(1.03);
+
+  }
+
+
 
   .nav-links :nth-child(5):hover {
       color: rgb(12, 26, 23);
       color: rgb(5, 7, 7);
   }
 
-
+  #contact {
+      display: none;
+  }
 
   #Contactus {
       /* background-color: rgb(61 254 215); */
-      background-color: aqua;
+      background-color: #06b8b8;
       border: 1px solid rgb(6, 214, 214);
       border-radius: 4px 0px 4px 0px;
       padding: 4px 2px;
   }
 
+  #Contactus:hover {
+      transform: scale(1.04);
+  }
+
   #Contactus a:hover {
-      color: rgb(7, 35, 245);
+      color: rgb(82, 87, 87);
+      /* color: #3a3c3de8; */
       /* font-size: 1.22em;x`x` */
       transition: 0.5s ease-in-out;
+
   }
 
 
@@ -88,49 +125,94 @@
       color: white;
       font-size: 1.5em;
       /* width: 2vw; */
-      padding-left: 10px;
+      padding: 8px 0px 0px 10px;
       /* visibility: hidden; */
       display: none;
       cursor: pointer;
+
+  }
+
+  .nav-container-items {
+      position: relative;
+  }
+
+  .close-hem {
+      color: white;
+      /* background-color: white; */
+      font-size: 1.7em;
+      width: 20px;
+      padding: 8px 0px 0px 10px;
+      /* visibility: hidden; */
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 140px;
+      /* left: 10; */
+      right: 150px;
+      top: -8px;
+      /* transition: all ease-in 1s; */
   }
 
 
 
   @media screen and (max-width:860px) {
+    
       #hemburger {
           display: inline;
           padding-right: 15px;
+
       }
 
-      .nav-links:nth-child(1) {
+      #hemburger:hover{
+        font-size: 1.55em;
+      }
+
+      .cursor-move {
           display: none;
       }
 
-      .nav-links:nth-child(2) {
+
+
+
+      .nav-links {
+          /* transition: all ease-in-out 1.2s; */
+          text-align: center;
+          border-bottom: 3px solid rgb(18, 187, 239);
           display: none;
+          text-align: center;
+          font-size: 0.8rem;
+          margin: 2px;
+          cursor: pointer;
+
       }
 
-      .nav-links:nth-child(3) {
+      #contact {
           display: none;
+          opacity: 0;
       }
-
-      .nav-links:nth-child(4) {
-          display: none;
-      }
-
 
 
 
       #nav-container {
-          padding: 10px 15px;
+          padding: 10px 5%;
 
       }
   }
 
   @media screen and (max-width:420px) {
       #Contactus {
-          display:none;
+          display: none;
           /* visibility: hidden; */
       }
-    
+
+      #contact {
+          display: none;
+          opacity: 1;
+      }
+
+      .close-hem {
+          right: 138px;
+
+      }
+
   }
