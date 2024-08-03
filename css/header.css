@@ -15,7 +15,7 @@
 
   .cursor-move {
       width: 25px;
-      background-color: rgba(255, 255, 255, 0.807);
+      background-color: rgba(255, 255, 255, 0.521);
       height: 20px;
       box-shadow: 0px -1px 19px 7px aqua;
       border-radius: 50%;
@@ -45,7 +45,6 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 45px;
-
   }
 
   .protfo {
@@ -69,27 +68,51 @@
   }
 
 
-
   /* Base styles for navigation links */
   .nav-links {
       display: inline-block;
       text-decoration: none;
-      transition: color 0.3s ease-in-out;
       font-family: 'Ubuntu', sans-serif;
-      color: white;
+      color: rgb(252, 255, 255);
       font-size: 1.2em;
       padding: 0px 10px;
+      transition: all ease-out 0.5s;
+      position: relative;
+  }
+
+
+  .nav-links:hover{
+    color: white;
+    font-size: 1.22em;
+  }
+
+
+  /* here only hover effect of links from left to right */
+
+  .nav-links::after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 8px;
+      padding: 5px;
+      transition: all ease-out 0.5s;
+      width: 0%;
+      border-bottom: 2px solid transparent;
   }
 
   /* Hover effect */
-  .nav-links:hover {
-      color: aqua;
+  .nav-links:hover::after {
       /* Change text color on hover */
-      transform: scale(1.03);
-
+      border-bottom: 2px solid aqua;
+      content: "";
+      width: 80%;
   }
 
+  .nav-links:first-child:hover::after{
+    width: 67%;
+  }
 
+ /* here end of hover effect of links from left to right */
 
   .nav-links :nth-child(5):hover {
       color: rgb(12, 26, 23);
@@ -103,7 +126,7 @@
   #Contactus {
       /* background-color: rgb(61 254 215); */
       background-color: #06b8b8;
-      border: 1px solid rgb(6, 214, 214);
+      border: transparent;
       border-radius: 4px 0px 4px 0px;
       padding: 4px 2px;
   }
@@ -113,7 +136,7 @@
   }
 
   #Contactus a:hover {
-      color: rgb(82, 87, 87);
+      color: rgb(25, 25, 25);
       /* color: #3a3c3de8; */
       /* font-size: 1.22em;x`x` */
       transition: 0.5s ease-in-out;
@@ -153,35 +176,46 @@
       /* transition: all ease-in 1s; */
   }
 
-
+  center{
+    font-family: "poppins";
+    color: aqua;
+    font-size: 1rem;
+    /* font-weight: 700; */
+    padding-bottom: 10px;
+  }
 
   @media screen and (max-width:860px) {
-    
+
       #hemburger {
           display: inline;
           padding-right: 15px;
 
       }
 
-      #hemburger:hover{
-        font-size: 1.55em;
+      #hemburger:hover {
+          font-size: 1.55em;
       }
 
       .cursor-move {
           display: none;
       }
-
+      .nav-links{
+        color: rgb(255, 255, 255)
+      }
+      .nav-links:hover::after{
+        border: transparent;
+      }
 
 
 
       .nav-links {
           /* transition: all ease-in-out 1.2s; */
           text-align: center;
-          border-bottom: 3px solid rgb(18, 187, 239);
+          border-bottom: 2px solid rgb(18, 187, 239);
           display: none;
           text-align: center;
           font-size: 0.8rem;
-          margin: 2px;
+          margin: 4px;
           cursor: pointer;
 
       }

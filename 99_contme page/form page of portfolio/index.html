@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contac me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+
+<div class="contactMe-container">
+
+    <div class="contactMe-container-box input-box1">
+
+        <img src="image.png" alt="">
+
+
+    </div>
+    
+    <div class="contactMe-container-box input-box2">
+
+            <h2>Contact Me😊</h2>
+
+                <!-- Using Web3Forms free contact form API to send form submissions data to your email. -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="d200ffa3-1ab8-4e36-a1bb-14dc8d4b484d">
+
+            <!-- Name input -->
+            <div class="input-container">
+                <span class="fa-solid fa-user inputs-icon"></span>
+                <label for="name"></label>
+                <input name="user-Name" id="name" type="text" placeholder="your good name" required>
+            </div>
+
+            <!-- Gmail Input -->
+            <div class="input-container">
+                <span class="fa-solid fa-envelope inputs-icon"></span>
+                <label for="Gmail"></label>
+                <input name="user-Gmail" id="Gmail" type="email" placeholder="your email xyz@gmail.com" required>
+            </div>
+
+            <!-- Mobile Input -->
+            <div class="input-container">
+                <span class="fa-solid fa-phone-volume inputs-icon"></span>
+                <label for="Mobile-Number"></label>
+                <input name="Mobile-Number" id="Mobile-Number" type="tel" placeholder="1234567890 optional" >
+            </div>
+
+            <!-- Message Input -->
+            <div class="input-container">
+                <span class="fa-solid fa-comments inputs-icon"></span>
+                <label for="Message"></label>
+                <textarea name="User-Text-Message" placeholder="write your Messages..." id="Message" cols="29" rows="5" autocomplete="on"></textarea>
+            </div>
+            <div class="Input-container">
+                        <input class="form-submit" type="submit" value="submit">
+            </div>
+
+        
+        </form>
+    </div>
+
+</div><!-- end of contactMe-container -->
+
+
+
+    
+</body>
+</html>

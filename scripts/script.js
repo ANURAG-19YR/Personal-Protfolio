@@ -22,9 +22,14 @@ navs.forEach((val) => {
         val.style.transition = "all ease-in 0.3s;"
         hemburger.style.display = "none"
         close_hemburger.style.display = "block"
+        close_hemburger.style.opacity = "1"
     })
 })
 
+
+
+// setTimeout(()=>{alert("thanx for visiting")},5000)
+// setTimeout(()=>{prompt("enter your good name : ")},10000)
 
 
 
@@ -41,7 +46,19 @@ close_hemburger.addEventListener("click", () => {
 })
 
 
+// ========================FOR DYNAMIC WORD TYPING USING TYPE.JS LIBRARY========
 
+
+// let DynamicTyping = document.querySelector("#dynamic-txt-changing")
+
+var typed = new Typed('#dynamic-txt-changing', {
+    strings: ["College Student...","Dumb Coder...","Learner..."],  //,"Berozgar...🙂"
+    typeSpeed: 120,
+    backSpeed:40,
+    loop:true,
+    showCursor:true
+
+  });
 
 
 
